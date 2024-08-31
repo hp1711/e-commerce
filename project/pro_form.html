@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add product | seller</title>
+
+    <style>
+
+        body{
+            background-color: aliceblue;
+        }
+        input{
+            margin-bottom: 10px;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-div" style="display: flex; justify-content: center;">
+    
+    <div class="form-div" style="width: 30%; border: 1px solid black; height: 800px; ">
+    
+    <h1 style="text-align: center;">Add products</h1><hr>
+
+    <form action="index.php" method="post" >
+
+      Product title: <input type="text" name="s_title" placeholder="enter title"><hr>
+
+        Product description: <input type="text" name="s_desc"placeholder="enter description"><hr>
+
+       Product price(USD): <input type="text" name="s_price" placeholder="enter price"><hr>
+
+       Product discount: <input type="text" name="s_discount" placeholder="enter discount"><hr>
+
+       Product rating:  <input type="text" name="s_rating" placeholder="enter rating"><hr>
+
+       Product stock: <input type="text" name="s_stock" placeholder=" add total stock"><hr>
+
+       Product's Brand: <input type="text" name="s_brand" placeholder="add brand"><hr>
+
+       product's category: <select name="s_category" >
+        <option value="" selected>Please select</option>
+        <option value="smartphones">smartphones</option>
+        <option value="laptops">laptops</option>
+        <option value="fragrances">fragrances</option>
+        <option value="skincare">skincare</option>
+        <option value="groceries">groceries</option>
+        <option value="home-decoration">home-decoration</option>
+        <option value="furniture">furniture</option>
+        <option value="tops">tops</option>
+        <option value="womens-dresses">womens-dresses</option>
+        <option value="womens-shoes">womens-shoes</option>
+        <option value="mens-shirts">mens-shirts</option>
+        <option value="mens-shoes">mens-shoes</option>
+        <option value="mens-watches">mens-watches</option>
+        <option value="womens-watches">womens-watches</option>
+        <option value="womens-bags">womens-bags</option>
+        <option value="womens-jewellery">womens-jewellery</option>
+        <option value="sunglasses">sunglasses</option>
+        <option value="automotive">automotive</option>
+        <option value="motorcycle">motorcycle</option>
+        <option value="lighting">lighting</option>
+
+
+
+
+
+
+       </select><hr>
+
+       Product main image: <input type="text" name="s_image" placeholder="add product image"><hr>
+<div style="display: flex; justify-content: center; margin-top: 20px; ">
+
+    <button type="submit" style="text-align: center; width: 100px; height: 45px; font-size: 17px;" >Add product</button>
+</div>
+
+
+
+
+    </form>
+    </div>
+    </div>
+</body>
+</html>

@@ -38,3 +38,8 @@ Welcome to the **E-Commerce Project**! This repository contains a comprehensive 
 1. **Clone the repository**:
    ```bash
    git clone https://github.com/yourusername/ecommerce-project.git
+   ```
+
+## **Coded by HarsH Panchal**
+
+## **Happy Coding! </>**

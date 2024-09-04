@@ -475,7 +475,7 @@ elseif($_POST['total_charge']){
 
 
 
-          $n="INSERT INTO order_main (total,us_id,p_method,f_status) values (:total,:u_id,:pm,'pending')";
+          $n="INSERT INTO order_main (total,us_id,p_method,f_status) values (:total,:u_id,'Paypal','pending')";
           $n1=$conn->prepare($n);
           $n1->bindParam("total",$f);
           $n1->bindParam("u_id",$us_id);
@@ -502,7 +502,7 @@ elseif($_POST['total_charge']){
           foreach($result2 as $h){
 
             $sq= "INSERT INTO orders (id,product_id_or,seller_id_or,dp_id_or,quantity_or,charge_or,status_or,user_id_or,pay_method) 
-            values (:t_id,:pro_id,:s_id,:d_id,:qn,:charge,'pending',:us_id,:pay)";
+            values (:t_id,:pro_id,:s_id,:d_id,:qn,:charge,'pending',:us_id,'Paypal')";
 
             $sql=$conn->prepare($sq);
             $sql->bindParam("t_id",$o);
@@ -513,7 +513,7 @@ elseif($_POST['total_charge']){
             $sql->bindParam("qn",$h['quantity']);
             $sql->bindParam("charge",$f);
             $sql->bindParam("us_id",$us_id);
-            $sql->bindParam("pay",$_POST['payment_method']);
+            // $sql->bindParam("pay",$_POST['payment_method']);
 
 
 

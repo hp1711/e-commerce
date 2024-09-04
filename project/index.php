@@ -10,7 +10,17 @@ session_start();
 require_once 'vendor/autoload.php';
 $data=$_GET;
 
+//payment done
 
+
+if($_GET['PayerID']!=null){
+     
+
+    echo $twig->render('success.html', array('roles' => $_SESSION['name'], 'payment' => $_GET['PayerID']));
+    die();
+    // echo $twig -> render('seller.html',array('roles'=>$_SESSION['name'],"products"=>$ans,'earn'=>$earn,'previous'=>$pre_order));
+
+}
 
 
 
